@@ -169,7 +169,10 @@ export default function LuaSandboxApp() {
                         <div className="flex gap-4 items-center">
                           <AiOutlineLike /> {script.likes || 0}
                           <FaCommentDots /> {script.comments?.length || 0}
-                          <FaShareAlt onClick={() => navigator.clipboard.writeText(/view/${script.id})} className="cursor-pointer" />
+                         <FaShareAlt
+  onClick={() => navigator.clipboard.writeText(`/view/${script.id}`)}
+  className="cursor-pointer"
+/>
                         </div>
                       </div>
                       <pre className="text-sm text-green-200 whitespace-pre-wrap max-h-32 overflow-auto">{script.code}</pre>
