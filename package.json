@@ -2,7 +2,7 @@
   "name": "sandboxluawebsite",
   "version": "1.0.0",
   "description": "Lua VM Sandbox Platform – Full Feature Edition",
-  "main": "server.js",
+  "main": "server.jsx",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
