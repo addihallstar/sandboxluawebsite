@@ -1,14 +1,15 @@
 // Lua VM Sandbox Platform – Full Feature Edition
 import React, { useState, useEffect } from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Card, CardContent } from "./components/ui/card";
+import { Button } from "./components/ui/button";
+import { Input } from "./components/ui/input";
+import { Textarea } from "./components/ui/textarea";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "./components/ui/tabs";
 import { motion } from "framer-motion";
-import { ScrollArea } from "@/components/ui/scroll-area";
+import { ScrollArea } from "./components/ui/scroll-area";
 import { AiOutlineLike } from "react-icons/ai";
 import { FaCommentDots, FaShareAlt } from "react-icons/fa";
+
 
 export default function LuaSandboxApp() {
   const [code, setCode] = useState("print('Hello Roblox!')");
